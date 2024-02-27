@@ -1,0 +1,233 @@
+* {
+
+    box-sizing: border-box;
+
+    margin: 0%;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+body {
+
+    background-color: midnightblue;
+
+    color: aliceblue;
+
+    height: 100px;
+
+}
+
+
+
+header {
+
+    padding: 2px 4px;
+
+    width: 100%;
+
+    margin: 0 auto;    
+
+}
+
+
+
+header h1 {
+
+    font-size: 50px;
+
+    text-align: center;
+
+    color: darkgray;
+
+}
+
+
+
+#new-task-form {
+
+    display: flex;
+
+}
+
+
+
+input, button {
+
+    border: none;
+
+    background: none;
+
+}
+
+
+
+#new-task-input {
+
+    font-size: large;
+
+    flex: 2 2 1%;
+
+    background-color: blue;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    color: aliceblue;
+
+}
+
+
+
+#new-task-input::placeholder {
+
+    color: darkgray;
+
+}
+
+
+
+#new-task-submit {
+
+    font-size: large;
+
+    color: red;
+
+    cursor: pointer;
+
+}
+
+
+
+#new-task-submit:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+#new-task-submit:active {
+
+    opacity: 0.6;
+
+}
+
+
+
+main {
+
+    flex: 2 2 2%;
+
+    width: 100%;
+
+    margin: 0 auto;
+
+}
+
+
+
+.task-list h2 {
+
+    font-size: large;
+
+    color: darkgrey;
+
+    margin: 10px;
+
+}
+
+
+
+#tasks .task {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    background-color: aqua;
+
+    padding: 10px;
+
+    border-radius: 100px;
+
+    margin: 10px;
+
+}
+
+
+
+#tasks .task .content .text {
+
+    font-size: medium;
+
+    color: aliceblue;
+
+    display: block;
+
+    width: 100%;
+
+}
+
+
+
+#tasks .task .content .text:not(:read-only) {
+
+    color: red;
+
+}
+
+
+
+#task .task .actions {
+
+    display: flex;
+
+}
+
+
+
+.task .actions button {
+
+    font-size: large;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+}
+
+
+
+.task .actions button:hover {
+
+    opacity: 0.8;
+
+}
+
+
+
+.task .actions button:active {
+
+    opacity: 0.6;
+
+}
+
+
+
+.task .actions .edit {
+
+    color: green;
+
+}
+
+
+
+.task .actions .delete {
+
+    color: red;
+
+}
